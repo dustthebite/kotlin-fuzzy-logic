@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvHotWaterBanner"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:text="Hot Water"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvHotWaterAngle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHotWaterAngle"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTemperatureBanner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvColdWaterBanner"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+
+        android:text="Cold Water"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvColdWaterAngle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvColdWaterAngle"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPressureBanner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTemperatureBanner"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+
+        android:text="Temprature"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTemperatureHot"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTemperatureHot"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Hot"
+        app:layout_constraintBottom_toTopOf="@+id/btnTemperatureNotSoHot"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnTemperatureWarm"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Warm"
+        app:layout_constraintBottom_toTopOf="@+id/btnTemperatureNotSoCold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTemperatureNotSoHot"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:text="NotSoHot"
+        app:layout_constraintBottom_toTopOf="@+id/btnTemperatureWarm"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTemperatureNotSoCold"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:text="NotSoCold"
+        app:layout_constraintBottom_toTopOf="@+id/btnTemperatureCold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTemperatureCold"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="@color/black"
+        android:text="Cold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPressureBanner"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+
+        android:text="Pressure"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPressureHigh"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPressureHigh"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+
+        android:backgroundTint="@color/black"
+        android:text="High"
+        app:layout_constraintBottom_toTopOf="@+id/btnPressureMedium"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPressureMedium"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+
+
+        android:backgroundTint="@color/black"
+        android:text="Medium"
+        app:layout_constraintBottom_toTopOf="@+id/btnPressureLow"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPressureLow"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="232dp"
+        android:backgroundTint="@color/black"
+        android:text="Low"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="332dp"
+        android:backgroundTint="@color/black"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnPressureHigh"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/btnTemperatureHot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
